@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid with Hover Effect</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+            grid-auto-rows: 250px; /* Default row height */
+            gap: 10px; /* Space between images */
+            max-width: 90%;
+            padding: 10px;
+        }
+
+        .grid-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px; /* Optional: rounded corners */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        /* Hover effect */
+        .grid-container img:hover {
+            transform: scale(1.05); /* Slightly enlarge the image */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <img src="fry.jpeg"alt="Image 1">
+        <img src="biriyani.jpeg" alt="Image 2">
+        <img src="burger.jpg" alt="Image 3">
+        <img src="burger.jpg" alt="Image 4">
+        <img src="chicken.jpg" alt="Image 5">
+        <img src="prawn.jpeg" alt="Image 6">
+        <img src="pudding.jpeg" alt="Image 7">
+        <img src="papd.jpeg" alt="Image 8">
+        <img src="samosa.jpeg" alt="Image 9">
+    </div>
+
+</body>
+</html>
