@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Food Delivery App</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #1212121b;
+            border: 1px solid #121212;
+        }
+        .nav-brand, .nav-info, .nav-signup {
+            display: flex;
+            align-items: center;
+        }
+        .nav-info > a {
+            padding: 5px 10px;
+            margin: 3px;
+            text-decoration: none;
+            color: #121212;
+        }
+        .btn-signup {
+            background-color: transparent;
+            padding: 8px 15px;
+            border: 1px solid #121212;
+            border-radius: 10px;
+            font-family: "Montserrat", sans-serif;
+        }
+        .poster {
+            width: 80%;
+            height: 300px;
+            margin: 40px 0;
+            border-radius: 20px;
+            position: relative;
+        }
+        .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .poster-info {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    background: url('background.jpg') center/cover no-repeat, seagreen;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+        
+        .poster-info h2, .poster-info p {
+            width: 50%;
+            text-align: center;
+        }
+        .expore {
+            width: 80%;
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-bottom: 1.5px solid #121212;
+        }
+        .expore-items {
+            width: 100%;   
+            height: 190px;    
+            display: flex;     
+            flex-direction: row;    
+            align-items: center;   
+            overflow-x: auto;          
+            padding: 10px 0;    
+        }
+        .food-item {
+            width: 200px;
+            height: 100%;
+            margin-right: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .food-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: steelblue;
+            }
+            .nav-info, .poster-info > p{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-brand">
+            <p>DELICIOUS FOODS</p>
+        </div>
+        <div class="nav-info">
+            <a href="/">Home</a>
+            <a href="/">Menu</a>
+            <a href="/">Contact us</a>
+        </div>
+        <div class="nav-signup">
+            🛒
+            <button class="btn-signup">Sign up</button>
+        </div>
+        
+        
+    </div>
+    <div class="poster">
+        <img src="c:\Users\bkann\Downloads\delicious.jpeg" />
+        <div class="poster-info">
+            <h2>Order your favorite food here</h2>
+            <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise.</p>
+            <button class="btn-signup" style="background-color: #ffffff;">View Menu</button>
+        </div>
+    </div>
+    <div class="expore">
+        <h2>Explore our menu</h2>
+        <p>Choose from a diverse menu featuring a delectable array of dishes.</p>
+        <div class="expore-items">
+            <div class="food-item">
+                <img src=".vscode/menu_1-CpSfC1Ff.webp" />
+                <p>Salad</p>
+            </div>
+            <div class="food-item">
+                <img src="6624a0e5-af75-4b62-9b90-4a955e0a6474.jpeg" />
+                <p>Prawn</p>
+            </div>
+            <div class="food-item">
+                <img src="burger - Copy.jpg" />
+                <p>Dish 1</p>
+            </div>
+            <div class="food-item">
+                <img src="prawn.jpeg" />
+                <p>Dish 2</p>
+            </div>
+            <div class="food-item">
+                <img src="The Best Custard Gulab Jamun (Indian Fusion….jpeg" />
+                <p>Dish 3</p>
+            </div>
+            <div class="food-item">
+                <img src="pudding.jpeg" />
+                <p>Dish 4</p>
+                <div class="food-item">
+                    <img src="fry.jpeg" />
+                    <p>Dish 5</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
